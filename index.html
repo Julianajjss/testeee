@@ -142,7 +142,7 @@ article .interactive-graphic{max-width:900px;margin-left:auto;margin-right:auto}
 <div class="ips-donut-item">
 <svg class="ips-donut" viewBox="0 0 120 120" role="img" aria-label="Ipanema: 76,86 pontos, 6º lugar entre 158 bairros">
 <circle class="ips-donut-track" cx="60" cy="60" r="45"></circle>
-<circle class="ips-donut-fill" cx="60" cy="60" r="45" stroke-dasharray="217.32 65.43" transform="rotate(-90 60 60)"></circle>
+<circle class="ips-donut-fill ips-donut-fill--blue" cx="60" cy="60" r="45" stroke-dasharray="217.32 65.43" transform="rotate(-90 60 60)"></circle>
 <text x="60" y="66" class="ips-donut-value">76,86</text>
 </svg>
 <div class="ips-donut-label"><strong>Ipanema</strong>6º lugar entre 158 bairros</div>
@@ -163,7 +163,7 @@ article .interactive-graphic{max-width:900px;margin-left:auto;margin-right:auto}
 <div class="ips-donut-item">
 <svg class="ips-donut" viewBox="0 0 120 120" role="img" aria-label="Ipanema: 87,9 pontos em necessidades humanas básicas">
 <circle class="ips-donut-track" cx="60" cy="60" r="45"></circle>
-<circle class="ips-donut-fill" cx="60" cy="60" r="45" stroke-dasharray="248.53 34.21" transform="rotate(-90 60 60)"></circle>
+<circle class="ips-donut-fill ips-donut-fill--blue" cx="60" cy="60" r="45" stroke-dasharray="248.53 34.21" transform="rotate(-90 60 60)"></circle>
 <text x="60" y="66" class="ips-donut-value">87,9</text>
 </svg>
 <div class="ips-donut-label"><strong>Ipanema</strong>87,9 pontos</div>
@@ -184,7 +184,7 @@ article .interactive-graphic{max-width:900px;margin-left:auto;margin-right:auto}
 <div class="ips-donut-item">
 <svg class="ips-donut" viewBox="0 0 120 120" role="img" aria-label="Ipanema: 75,0 pontos em fundamentos do bem-estar">
 <circle class="ips-donut-track" cx="60" cy="60" r="45"></circle>
-<circle class="ips-donut-fill" cx="60" cy="60" r="45" stroke-dasharray="212.06 70.69" transform="rotate(-90 60 60)"></circle>
+<circle class="ips-donut-fill ips-donut-fill--blue" cx="60" cy="60" r="45" stroke-dasharray="212.06 70.69" transform="rotate(-90 60 60)"></circle>
 <text x="60" y="66" class="ips-donut-value">75,0</text>
 </svg>
 <div class="ips-donut-label"><strong>Ipanema</strong>75,0 pontos</div>
@@ -205,7 +205,7 @@ article .interactive-graphic{max-width:900px;margin-left:auto;margin-right:auto}
 <div class="ips-donut-item">
 <svg class="ips-donut" viewBox="0 0 120 120" role="img" aria-label="Ipanema: 67,6 pontos em oportunidades">
 <circle class="ips-donut-track" cx="60" cy="60" r="45"></circle>
-<circle class="ips-donut-fill" cx="60" cy="60" r="45" stroke-dasharray="191.13 91.61" transform="rotate(-90 60 60)"></circle>
+<circle class="ips-donut-fill ips-donut-fill--blue" cx="60" cy="60" r="45" stroke-dasharray="191.13 91.61" transform="rotate(-90 60 60)"></circle>
 <text x="60" y="66" class="ips-donut-value">67,6</text>
 </svg>
 <div class="ips-donut-label"><strong>Ipanema</strong>67,6 pontos</div>
@@ -221,7 +221,7 @@ article .interactive-graphic{max-width:900px;margin-left:auto;margin-right:auto}
 </div>
 </div>
 </div>
-</figure>
+</figure><p class="source">Fontes: Índice de Progresso Social (IPS, 2022) / Instituto Pereira Passos (IPP)</p>
 </div>
 </figure><p>A maior diferença entre os dois bairros não está na nota geral do IPS, mas no componente “oportunidades”, que mede mobilidade urbana, acesso à cultura, liberdades individuais e ensino superior. Kathlen havia se formado havia pouco tempo em design de interiores e pretendia atuar na área. Um indicador em que o bairro onde cresceu apresentava, segundo o IPS, desempenho mais baixo.</p><h2 class="black-section-title" style="color: black;">Homicídios por ação policial</h2>
 <p>Segundo a Polícia Militar do Rio de Janeiro, agentes da Unidade de Polícia Pacificadora (UPP) foram atacados a tiros em um local conhecido como Beco da 14, no Lins, e encontraram uma mulher ferida após o confronto. A Delegacia de Homicídios ouviu cinco dos 12 policiais presentes na ocorrência e apreendeu 21 armas, entre fuzis e pistolas. O laudo do Instituto Médico Legal (IML) concluiu que Kathlen foi atingida por um único tiro de fuzil, que atravessou seu tórax.</p><p>A morte de Kathlen integra a estatística de homicídios por ação policial, indicador que o IPS classifica dentro da dimensão “oportunidades”. Em 2022, essa taxa era de 22,86 mortes por 100 mil habitantes no Jacarezinho, região colada ao Complexo do Alemão; de 25,32 no Rio Comprido; de 22,11 em Anchieta; e de 20,59 na Pavuna. Na Região da Lagoa, onde ficam Ipanema e a loja em que Kathlen trabalhava desde os 18 anos, a taxa era de 1,19; em Copacabana, de 1,24; em Botafogo, de 0,83; e na Rocinha, uma das favelas mais conhecidas da zona sul, de 0,00.</p>
@@ -458,6 +458,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeGraphic()});
 .ips-donut{width:88px;height:88px;flex:0 0 auto}
 .ips-donut-track{fill:none;stroke:#dcdcdc;stroke-width:14}
 .ips-donut-fill{fill:none;stroke:#e2726b;stroke-width:14;stroke-linecap:round;transition:stroke-dasharray .3s ease}
+.ips-donut-fill--blue{stroke:#8ec7e8}
 .ips-donut-value{font:700 19px/1 "Helvetica Neue",Arial,sans-serif;fill:#222;text-anchor:middle}
 .ips-donut-label{font:15px/1.4 "Helvetica Neue",Arial,sans-serif;color:#333}
 .ips-donut-label strong{display:block;font-weight:700;color:#111;margin-bottom:2px}
